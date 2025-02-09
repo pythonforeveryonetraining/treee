@@ -1,0 +1,21 @@
+[project]
+name = "treee"
+version = "1.0.0"
+authors = [
+  { name="Loek van den Ouweland", email="trainer@codersbringchange.com" },
+]
+description = "Visualizes directory tree from the current command line folder."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = {text = "MIT"}
+
+[project.urls]
+Homepage = "https://github.com/pythonforeveryonetraining/dirtree"
+Issues = "https://github.com/pythonforeveryonetraining/dirtree/issues"
+
+[project.scripts]
+treee = "treee.tree:print_tree"
