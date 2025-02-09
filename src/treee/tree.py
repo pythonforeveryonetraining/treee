@@ -33,12 +33,12 @@ def get_flat_tree(folder, ignore, indent=""):
 
 def print_tree():
     path = Path.cwd()
-    ignore = [".dirtree-ignore"]
+    ignore = [".treee-ignore"]
     try:
-        with open(path.joinpath(".dirtree-ignore"), "r") as file:
+        with open(path.joinpath(".treee-ignore"), "r") as file:
             ignore += file.read().strip().split()
     except:
-        pass  # could not load .dirtree-ignore. Ignore error.
+        pass  # could not load config file. Ignore error.
 
     print(f"Ignoring: {ignore}.")
     for x in get_flat_tree(path, ignore):
